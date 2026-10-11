@@ -24,7 +24,7 @@ Deadline: **11 October 2026 at 23:59 (Europe/Riga)**
 ## Finish the report
 
 - [x] Generate a three-page PDF from the completed report content.
-- [ ] Insert your full name (the date is already set).
+- [x] Insert your full name (the date is already set).
 - [x] Replace every result placeholder using benchmark.csv.
 - [x] Add one short paragraph interpreting the results.
 - [x] Keep the final report within 2–3 pages.

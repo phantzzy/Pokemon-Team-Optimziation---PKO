@@ -218,8 +218,8 @@ Required CSV columns:
 - [x] Verify that all results are reasonable.
 - [x] Keep the final `benchmark.csv` in the repository.
 - [x] Select representative results for the report.
-- [x] Prepare a polished 3-page PDF report draft.
-- [ ] Add the student's full name and approve the final PDF.
+- [x] Prepare polished 3-page English and Latvian PDF reports.
+- [x] Add the student's full name and visually verify both final PDFs.
 - [x] Insert the GitHub repository link into the report.
 - [ ] Be able to explain the domain, cost, neighborhood, and SA algorithm.
 - [ ] Submit the PDF in e-studies by 11 October at 23:59.

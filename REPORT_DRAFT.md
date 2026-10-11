@@ -1,13 +1,12 @@
 # Defensive Pokémon Team Optimization with Simulated Annealing
 
-**Course:** Practical Combinatorial Optimization  
-**Repository:** https://github.com/phantzzy/Pokemon-Team-Optimziation---PKO  
-**Student:** [INSERT NAME]  
+**Course:** Practical Combinatorial Optimization<br>
+**Repository:** https://github.com/phantzzy/Pokemon-Team-Optimziation---PKO<br>
+**Student:** Raivis Randohs<br>
 **Date:** 11 October 2026
 
 > The 30-run benchmark values below were generated on 11 October 2026. The
-> student must still review the results and add their full name before
-> submission.
+> student should review the results before submission.
 
 ## 1. Problem formulation
 

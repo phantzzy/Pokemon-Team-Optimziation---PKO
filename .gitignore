@@ -1,8 +1,27 @@
 __pycache__/
 *.py[cod]
+*.egg-info/
 .venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 .idea/
 .vscode/
 .coverage
 htmlcov/
+build/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+Desktop.ini
 tmp/
+
+# Keep only the final experiment and report artifacts.
+results/*
+!results/benchmark.csv
+output/*
+!output/pdf/
+output/pdf/*
+!output/pdf/pokemon_team_optimization_report.pdf
+!output/pdf/pokemon_team_optimization_report_lv.pdf

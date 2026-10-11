@@ -2,12 +2,11 @@
 
 **Kurss:** Praktiskā kombinatoriskā optimizācija<br>
 **Repozitorijs:** https://github.com/phantzzy/Pokemon-Team-Optimziation---PKO<br>
-**Students:** [IERAKSTĪT VĀRDU UZVĀRDU]<br>
+**Students:** Raivis Randohs<br>
 **Datums:** 2026. gada 11. oktobris
 
 > Tālāk norādītie 30 izpildes reižu etalonmērījumu rezultāti tika iegūti
-> 2026. gada 11. oktobrī. Pirms iesniegšanas studentam vēl jāpārskata rezultāti
-> un jāieraksta savs vārds un uzvārds.
+> 2026. gada 11. oktobrī. Pirms iesniegšanas studentam vēl jāpārskata rezultāti.
 
 ## 1. Problēmas formulējums
 
