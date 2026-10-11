@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import subprocess
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -59,7 +60,26 @@ class CommandLineTests(unittest.TestCase):
         self.assertNotEqual(result.returncode, 0)
         self.assertIn("Instance file not found", result.stderr)
 
+    def test_benchmark_command_writes_csv(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "benchmark.csv"
+            result = self.run_cli(
+                "benchmark",
+                "--runs",
+                "1",
+                "--exact-max-candidates",
+                "0",
+                "--max-iterations",
+                "5",
+                "--output",
+                str(output),
+            )
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertTrue(output.exists())
+            self.assertIn("Instance: small_12", result.stdout)
+            self.assertIn("Best known:", result.stdout)
+            self.assertIn(f"CSV: {output}", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()
-

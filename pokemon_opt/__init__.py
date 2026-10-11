@@ -2,6 +2,14 @@
 
 from .data_loader import load_pokemon, load_type_chart
 from .brute_force import BruteForceResult, brute_force
+from .benchmark import (
+    BenchmarkRecord,
+    BenchmarkResult,
+    InstanceBenchmarkSummary,
+    format_benchmark_summary,
+    optimality_gap,
+    run_benchmark,
+)
 from .evaluation import TEAM_SIZE, average_multiplier, team_cost
 from .instances import ProblemInstance, load_instance, predefined_instance_paths
 from .models import Pokemon
@@ -17,6 +25,9 @@ __all__ = [
     "Pokemon",
     "ProblemInstance",
     "BruteForceResult",
+    "BenchmarkRecord",
+    "BenchmarkResult",
+    "InstanceBenchmarkSummary",
     "SimulatedAnnealingResult",
     "SolveSummary",
     "TEAM_SIZE",
@@ -26,10 +37,13 @@ __all__ = [
     "defensive_multiplier",
     "generate_neighbor",
     "format_solve_summary",
+    "format_benchmark_summary",
     "load_pokemon",
     "load_instance",
     "load_type_chart",
     "predefined_instance_paths",
+    "optimality_gap",
+    "run_benchmark",
     "simulated_annealing",
     "solve_problem",
     "team_cost",

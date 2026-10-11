@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 from collections.abc import Sequence
 
+from pokemon_opt.benchmark import format_benchmark_summary, run_benchmark
 from pokemon_opt.brute_force import DEFAULT_MAX_CANDIDATES
 from pokemon_opt.instances import load_instance
 from pokemon_opt.simulated_annealing import (
@@ -44,6 +45,30 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_MAX_CANDIDATES,
     )
 
+    benchmark_parser = subparsers.add_parser(
+        "benchmark", help="benchmark all predefined instances"
+    )
+    benchmark_parser.add_argument("--runs", type=int, default=30)
+    benchmark_parser.add_argument(
+        "--output", default="results/benchmark.csv", help="output CSV path"
+    )
+    benchmark_parser.add_argument(
+        "--exact-max-candidates",
+        type=int,
+        default=DEFAULT_MAX_CANDIDATES,
+        help="largest instance solved exactly; use 0 to disable",
+    )
+    benchmark_parser.add_argument(
+        "--initial-temperature", type=float, default=DEFAULT_INITIAL_TEMPERATURE
+    )
+    benchmark_parser.add_argument("--alpha", type=float, default=DEFAULT_ALPHA)
+    benchmark_parser.add_argument(
+        "--min-temperature", type=float, default=DEFAULT_MIN_TEMPERATURE
+    )
+    benchmark_parser.add_argument(
+        "--max-iterations", type=int, default=DEFAULT_MAX_ITERATIONS
+    )
+
     subparsers.add_parser("gui", help="open the visual desktop interface")
     return parser
 
@@ -59,6 +84,22 @@ def main(argv: Sequence[str] | None = None) -> int:
             launch_gui()
         except RuntimeError as error:
             parser.error(str(error))
+        return 0
+
+    if args.command == "benchmark":
+        try:
+            result = run_benchmark(
+                runs=args.runs,
+                output_path=args.output,
+                exact_max_candidates=args.exact_max_candidates,
+                initial_temperature=args.initial_temperature,
+                alpha=args.alpha,
+                min_temperature=args.min_temperature,
+                max_iterations=args.max_iterations,
+            )
+        except (FileNotFoundError, ValueError) as error:
+            parser.error(str(error))
+        print(format_benchmark_summary(result))
         return 0
 
     try:
@@ -81,4 +122,3 @@ def main(argv: Sequence[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

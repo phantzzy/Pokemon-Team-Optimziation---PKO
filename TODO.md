@@ -70,7 +70,7 @@ have been implemented and verified locally unless stated otherwise.
 - [x] Test deterministic and order-independent team evaluation.
 - [x] Test average multiplier calculation.
 - [x] Test invalid team size and duplicate-team rejection.
-- [x] Run the current suite successfully: 42 tests passing.
+- [x] Run the current suite successfully: 48 tests passing.
 - [x] Compile the current package and tests successfully.
 
 ## 6. Neighborhood move
@@ -152,47 +152,47 @@ have been implemented and verified locally unless stated otherwise.
 
 ## 11. Benchmarking and CSV results
 
-- [ ] Implement the `benchmark` command.
-- [ ] Run SA 30 times per instance with seeds `0..29` by default.
-- [ ] Measure every run's execution time.
-- [ ] Record every returned team and cost.
-- [ ] Run exact brute force for configured small instances.
-- [ ] Record the proven optimal cost and team where available.
-- [ ] Compute exact optimality gaps where an optimum is known.
-- [ ] Compute and clearly label best-known results for large instances.
-- [ ] Never label a best-known solution as a proven optimum.
-- [ ] Write `results/benchmark.csv` with all required columns.
-- [ ] Print concise per-instance summaries.
-- [ ] Add tests for benchmark records, gaps, and CSV output.
+- [x] Implement the `benchmark` command.
+- [x] Run SA 30 times per instance with seeds `0..29` by default.
+- [x] Measure every run's execution time.
+- [x] Record every returned team and cost.
+- [x] Run exact brute force for configured small instances.
+- [x] Record the proven optimal cost and team where available.
+- [x] Compute exact optimality gaps where an optimum is known.
+- [x] Compute and clearly label best-known results for large instances.
+- [x] Never label a best-known solution as a proven optimum.
+- [x] Write `results/benchmark.csv` with all required columns.
+- [x] Print concise per-instance summaries.
+- [x] Add tests for benchmark records, gaps, and CSV output.
 
 Required CSV columns:
 
-- [ ] `instance`
-- [ ] `n`
-- [ ] `algorithm`
-- [ ] `run`
-- [ ] `seed`
-- [ ] `cost`
-- [ ] `average_multiplier`
-- [ ] `runtime_ms`
-- [ ] `optimal_cost`
-- [ ] `best_known_cost`
-- [ ] `gap_pct`
-- [ ] `team`
+- [x] `instance`
+- [x] `n`
+- [x] `algorithm`
+- [x] `run`
+- [x] `seed`
+- [x] `cost`
+- [x] `average_multiplier`
+- [x] `runtime_ms`
+- [x] `optimal_cost`
+- [x] `best_known_cost`
+- [x] `gap_pct`
+- [x] `team`
 
 ## 12. Final verification
 
-- [ ] Run the complete unit-test suite.
-- [ ] Run a standalone SA solve through the CLI.
-- [ ] Run a standalone brute-force solve through the CLI.
-- [ ] Confirm identical seeds and parameters reproduce identical SA results.
-- [ ] Run at least one smoke benchmark.
-- [ ] Check that benchmark CSV output opens correctly.
-- [ ] Check all documented commands on Python 3.11+.
-- [ ] Review the repository for unnecessary dependencies or features.
-- [ ] Confirm no ready-made optimization implementation is used.
-- [ ] Fix all discovered bugs.
-- [ ] Commit and push the finished implementation.
+- [x] Run the complete unit-test suite.
+- [x] Run a standalone SA solve through the CLI.
+- [x] Run a standalone brute-force solve through the CLI.
+- [x] Confirm identical seeds and parameters reproduce identical SA results.
+- [x] Run at least one smoke benchmark.
+- [x] Check that benchmark CSV output opens correctly.
+- [x] Check all documented commands on Python 3.11+.
+- [x] Review the repository for unnecessary dependencies or features.
+- [x] Confirm no ready-made optimization implementation is used.
+- [x] Fix all discovered bugs.
+- [x] Commit and push the finished implementation.
 
 ## 13. README and report support
 
