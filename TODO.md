@@ -10,8 +10,8 @@ have been implemented and verified locally unless stated otherwise.
 - [x] Connect the local repository to GitHub over HTTPS.
 - [x] Add a Python-focused `.gitignore`.
 - [x] Push the initial data/importer commit to GitHub.
-- [ ] Commit and push the latest model, evaluation, tests, and this checklist.
-- [ ] Add the complete final project structure.
+- [x] Commit and push the latest model, evaluation, tests, and this checklist.
+- [x] Add the complete final project structure.
 
 ## 2. Pokémon data and type chart
 
@@ -196,24 +196,24 @@ Required CSV columns:
 
 ## 13. README and report support
 
-- [ ] Create the main project `README.md`.
-- [ ] Explain the project goal and exact problem formulation.
-- [ ] Explain the domain and solution-space size.
-- [ ] Explain the cost function and average multiplier.
-- [ ] Explain the 1-out/1-in neighborhood.
-- [ ] Explain the custom Simulated Annealing implementation.
-- [ ] State explicitly that no ready-made optimizer is used.
-- [ ] Document installation, solve, test, and benchmark commands.
-- [ ] Document the project structure and data source.
-- [ ] Include verified example output.
-- [ ] Explain optimality gap and best-known results.
-- [ ] Prepare concise report-ready summaries and result tables.
-- [ ] Do not fabricate benchmark results.
+- [x] Create the main project `README.md`.
+- [x] Explain the project goal and exact problem formulation.
+- [x] Explain the domain and solution-space size.
+- [x] Explain the cost function and average multiplier.
+- [x] Explain the 1-out/1-in neighborhood.
+- [x] Explain the custom Simulated Annealing implementation.
+- [x] State explicitly that no ready-made optimizer is used.
+- [x] Document installation, solve, test, and benchmark commands.
+- [x] Document the project structure and data source.
+- [x] Include verified example output.
+- [x] Explain optimality gap and best-known results.
+- [x] Prepare concise report-ready summaries and result tables.
+- [x] Do not fabricate benchmark results.
 
 ## 14. Student responsibilities
 
 - [ ] Confirm the final optimization criterion with the lecturer if necessary.
-- [ ] Run the completed code on the student's computer.
+- [x] Run the completed code on the student's computer.
 - [ ] Run and inspect the final benchmark.
 - [ ] Verify that all results are reasonable.
 - [ ] Keep the final `benchmark.csv` in the repository.
