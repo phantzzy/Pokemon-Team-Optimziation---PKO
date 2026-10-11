@@ -25,3 +25,9 @@ output/*
 output/pdf/*
 !output/pdf/pokemon_team_optimization_report.pdf
 !output/pdf/pokemon_team_optimization_report_lv.pdf
+
+# Local report sources and personal submission notes.
+REPORT_DRAFT.md
+REPORT_LV.md
+SUBMISSION_CHECKLIST.md
+TODO.md
