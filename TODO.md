@@ -214,11 +214,12 @@ Required CSV columns:
 
 - [ ] Confirm the final optimization criterion with the lecturer if necessary.
 - [x] Run the completed code on the student's computer.
-- [ ] Run and inspect the final benchmark.
-- [ ] Verify that all results are reasonable.
-- [ ] Keep the final `benchmark.csv` in the repository.
-- [ ] Select representative results for the report.
-- [ ] Prepare the final 2–3 page PDF report.
-- [ ] Insert the GitHub repository link into the report.
+- [x] Run and inspect the final benchmark.
+- [x] Verify that all results are reasonable.
+- [x] Keep the final `benchmark.csv` in the repository.
+- [x] Select representative results for the report.
+- [x] Prepare a polished 3-page PDF report draft.
+- [ ] Add the student's full name and approve the final PDF.
+- [x] Insert the GitHub repository link into the report.
 - [ ] Be able to explain the domain, cost, neighborhood, and SA algorithm.
 - [ ] Submit the PDF in e-studies by 11 October at 23:59.

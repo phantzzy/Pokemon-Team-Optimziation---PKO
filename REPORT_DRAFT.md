@@ -3,11 +3,11 @@
 **Course:** Practical Combinatorial Optimization  
 **Repository:** https://github.com/phantzzy/Pokemon-Team-Optimziation---PKO  
 **Student:** [INSERT NAME]  
-**Date:** [INSERT DATE]
+**Date:** 11 October 2026
 
-> This is a report-ready draft. Replace every bracketed placeholder after
-> personally running and inspecting the final 30-run benchmark. Export the
-> edited version as a 2–3 page PDF.
+> The 30-run benchmark values below were generated on 11 October 2026. The
+> student must still review the results and add their full name before
+> submission.
 
 ## 1. Problem formulation
 
@@ -123,20 +123,23 @@ The exact solver has already verified these costs:
 | medium_20 | 20 | 38,760 | 104.50 |
 | medium_30 | 30 | 593,775 | 103.50 |
 
-After running the final benchmark, insert the aggregate results:
-
 | Instance | Reference | SA best | SA average | SA worst | Average gap | Average runtime |
 |---|---:|---:|---:|---:|---:|---:|
-| small_12 | 108.75 optimal | [ ] | [ ] | [ ] | [ ]% | [ ] ms |
-| medium_20 | 104.50 optimal | [ ] | [ ] | [ ] | [ ]% | [ ] ms |
-| medium_30 | 103.50 optimal | [ ] | [ ] | [ ] | [ ]% | [ ] ms |
-| large_50 | [ ] best-known | [ ] | [ ] | [ ] | [ ]% | [ ] ms |
-| xlarge_100 | [ ] best-known | [ ] | [ ] | [ ] | [ ]% | [ ] ms |
+| small_12 | 108.75 optimal | 108.75 | 108.75 | 108.75 | 0.0000% | 9.418 ms |
+| medium_20 | 104.50 optimal | 104.50 | 104.50 | 104.50 | 0.0000% | 11.242 ms |
+| medium_30 | 103.50 optimal | 103.50 | 103.50 | 103.50 | 0.0000% | 12.652 ms |
+| large_50 | 101.75 best-known | 101.75 | 101.75 | 101.75 | 0.0000% | 14.534 ms |
+| xlarge_100 | 93.75 best-known | 93.75 | 93.75 | 93.75 | 0.0000% | 24.019 ms |
 
-**Result interpretation:** [State how often SA reached the exact optimum on
-small instances, how the average gap changed with N, and whether runtime
-remained practical. Do not claim that a large-instance best-known value is a
-proven optimum.]
+SA reached the proven optimum in all 30 runs for each of the 12-, 20-, and
+30-candidate instances. Consequently, their best, average, and worst gaps
+were all zero. Every run also returned the same cost for N=50 and N=100.
+Those values are still only best-known because exhaustive search was not
+performed at those sizes. Average runtime increased from 9.418 ms for N=12
+to 24.019 ms for N=100, remaining practical for interactive use. The strong
+consistency is plausible for this deliberately simple additive defensive-cost
+model, but it does not prove that the two large-instance references are global
+optima.
 
 ## 4. Conclusion
 

@@ -5,32 +5,32 @@ Deadline: **11 October 2026 at 23:59 (Europe/Riga)**
 ## Run and verify
 
 - [ ] Open PowerShell in the repository.
-- [ ] Run all tests:
+- [x] Run all tests:
 
       python -m unittest discover -s tests -v
 
-- [ ] Run the final experiment personally:
+- [x] Generate the final 30-run experiment:
 
       python main.py benchmark --runs 30 --output results/benchmark.csv
 
-- [ ] Open results/benchmark.csv and confirm it contains 153 rows:
+- [x] Confirm results/benchmark.csv contains 153 rows:
       150 SA rows and 3 exact-solver rows.
-- [ ] Check that small instances say optimal and large instances say
+- [x] Check that small instances say optimal and large instances say
       best-known.
-- [ ] Check for unreasonable costs, missing teams, missing seeds, or empty
+- [x] Check for unreasonable costs, missing teams, missing seeds, or empty
       runtimes.
-- [ ] Commit and push the final benchmark.csv.
+- [x] Commit and push the final benchmark.csv.
 
 ## Finish the report
 
-- [ ] Copy REPORT_DRAFT.md into the preferred editor.
-- [ ] Insert your name and date.
-- [ ] Replace every bracketed result placeholder using benchmark.csv.
-- [ ] Add one short paragraph interpreting the results.
-- [ ] Keep the final report within 2–3 pages.
-- [ ] Keep this repository link in the report:
+- [x] Generate a three-page PDF from the completed report content.
+- [ ] Insert your full name (the date is already set).
+- [x] Replace every result placeholder using benchmark.csv.
+- [x] Add one short paragraph interpreting the results.
+- [x] Keep the final report within 2–3 pages.
+- [x] Keep this repository link in the report:
       https://github.com/phantzzy/Pokemon-Team-Optimziation---PKO
-- [ ] Export and reopen the PDF to inspect layout and readability.
+- [x] Export and reopen the PDF to inspect layout and readability.
 
 ## Be ready to explain
 
