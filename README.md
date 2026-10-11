@@ -193,8 +193,6 @@ instances/                      fixed 12, 20, 30, 50, and 100 sets
 scripts/                        reproducible data-generation tools
 tests/                          unittest suite
 results/                        benchmark output location
-REPORT_DRAFT.md                 report-ready assignment draft
-SUBMISSION_CHECKLIST.md         final student handoff checklist
 ~~~
 
 ## Scope and interpretation
